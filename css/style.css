@@ -1,0 +1,72 @@
+/* =========================== RESET CSS =========================== */
+*{ margin: 0px; padding: 0px; font-family: 'Public Sans', sans-serif;}
+ul{ list-style: none; }
+p{ font-size: 1rem; line-height: 1.8rem; }
+h1{ font-family: 'Ibarra Real Nova', serif; font-size: 3.125rem; line-height: 3.125rem; }
+h2{ font-family: 'Ibarra Real Nova', serif; font-size: 2.5rem; line-height: 2.5rem; }
+h3{ font-family: 'Ibarra Real Nova', serif; font-size: 2rem; line-height: 2.1rem; }
+body{padding:0px; margin:0px;font-size: 100%;--invisible:rgba(0,0,0,0);}
+button{border: none;padding: 1em;}
+/* ================================================================= */
+
+
+
+body{
+    --bg_orange:#F16822;
+    --bg_white:#FFFFFF;
+    --bg_grey:#333333;
+    --bg_lightgrey:#00000029;
+}
+/* general */
+.list_row{
+    display: flex;
+    flex-direction: row;
+}
+    .list_row > li{
+        margin: 0.5em;
+    }
+.list_col{
+    display: flex;
+    flex-direction: column;
+}
+    .list_col > li{
+        margin: 0.5em;
+        line-height: 1em;
+    }
+.container{
+    min-height: 30em;
+    background-color: whitesmoke;
+    margin: auto;
+    max-width: 90vw;
+}
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}   
+    .container_items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+        .logo_text{
+            margin-left: 0.5em;
+        }
+            .logo_title{
+                font-size: 1.3em;
+            }
+            .logo_subtitle{
+                font-size: 0.95em;
+            }
+    .header_btn{
+        background-color: var(--invisible);
+    }
+    .header_btn:focus,.header_btn:hover{
+        color: white;
+        background-color: var(--bg_orange);
+    }
+/* SECTIONS */

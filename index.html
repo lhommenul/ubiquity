@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./js/glider/glider.css" />
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ubiquity</title> 
+</head>
+<body> 
+    <header>
+        <div class="container_items">
+            <img src="./assets/logo.svg" alt="logo site internet">
+            <hgroup class="logo_text">
+                <p class="logo_title">Ubiquity</p>
+                <p class="logo_subtitle">Profesionnal Web Ui</p>
+            </hgroup>
+        </div>
+        <nav>
+            <ul class="list_row">
+                <li><button class="header_btn">HOME</button></li>
+                <li><button class="header_btn">ABOUT</button></li>
+                <li><button class="header_btn">PORTFOLIO</button></li>
+                <li><button class="header_btn">BLOG</button></li>
+                <li><button class="header_btn">CONTACT</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="glider-contain">
+                    <div class="glider">
+                      <article>
+                          <h2 class="slider_title_orange">At Ubiquity, We Care</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor ratione nisi natus, numquam optio, nobis maiores fugit alias praesentium cupiditate ut blanditiis deserunt, eum eaque unde tenetur ad dolore?</p>
+                      </article>
+                      <article>
+                          <h2 class="slider_title_orange">At Ubiquity, We Care</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor ratione nisi natus, numquam optio, nobis maiores fugit alias praesentium cupiditate ut blanditiis deserunt, eum eaque unde tenetur ad dolore?</p>
+                      </article>
+                      <article>
+                          <h2 class="slider_title_orange">At Ubiquity, We Care</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor ratione nisi natus, numquam optio, nobis maiores fugit alias praesentium cupiditate ut blanditiis deserunt, eum eaque unde tenetur ad dolore?</p>
+                      </article>
+                      <article>
+                          <h2 class="slider_title_orange">At Ubiquity, We Care</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor ratione nisi natus, numquam optio, nobis maiores fugit alias praesentium cupiditate ut blanditiis deserunt, eum eaque unde tenetur ad dolore?</p>
+                      </article>
+                      <article>
+                          <h2 class="slider_title_orange">At Ubiquity, We Care</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor ratione nisi natus, numquam optio, nobis maiores fugit alias praesentium cupiditate ut blanditiis deserunt, eum eaque unde tenetur ad dolore?</p>
+                      </article>
+                    </div>
+                    <button aria-label="Previous" class="glider-prev"><img src="./assets/arrow-circle-left.svg" alt="navigation vers la gauche"></button>
+                    <button aria-label="Next" class="glider-next"><img src="./assets/arrow-circle-right.svg" alt="navigation vers la droite"></button>
+                    <div role="tablist" id="dots"></div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/glider/glider.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/scroller.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            dots: '#dots',
+            draggable: true,
+            arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+            }
+        });
+    </script>
+</body>
+</html>
