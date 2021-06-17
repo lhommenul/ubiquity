@@ -1,10 +1,10 @@
 /* =========================== RESET CSS =========================== */
-*{ margin: 0px; padding: 0px; font-family: 'Public Sans', sans-serif;}
+*{ margin: 0px; padding: 0px;}
 ul{ list-style: none; }
-p{ font-size: 1rem; line-height: 1.8rem; }
-h1{ font-family: 'Ibarra Real Nova', serif; font-size: 3.125rem; line-height: 3.125rem; }
-h2{ font-family: 'Ibarra Real Nova', serif; font-size: 2.5rem; line-height: 2.5rem; }
-h3{ font-family: 'Ibarra Real Nova', serif; font-size: 2rem; line-height: 2.1rem; }
+p{ font-size: 1rem; line-height: 1.5em; }
+h1{font-size: 3.125rem; line-height: 3.125rem; }
+h2{font-size: 2.5rem; line-height: 2.5rem; }
+h3{font-size: 2rem; line-height: 2.1rem; }
 body{padding:0px; margin:0px;font-size: 100%;--invisible:rgba(0,0,0,0);}
 button{border: none;padding: 1em;}
 /* ================================================================= */
@@ -16,6 +16,11 @@ body{
     --bg_white:#FFFFFF;
     --bg_grey:#333333;
     --bg_lightgrey:#00000029;
+    --bg_btn_grey:#444444;
+    --bg_footer_text:#CCCCCC;
+}
+button{
+    cursor: pointer ;
 }
 /* general */
 .list_row{
@@ -35,9 +40,17 @@ body{
     }
 .container{
     min-height: 30em;
-    background-color: whitesmoke;
     margin: auto;
-    max-width: 90vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container > *{
+    
 }
 /* HEADER */
 header{
@@ -46,6 +59,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+    margin: auto;
+    max-width: 100em;
 }   
     .container_items{
         display: flex;
@@ -70,3 +85,263 @@ header{
         background-color: var(--bg_orange);
     }
 /* SECTIONS */
+/* n1 */
+section:nth-child(1){
+    background-image: url("../assets/green-chameleon-s9CC2SKySJM-unsplash@2x.png");
+    background-position: center;
+    background-size: cover;
+}
+.glider-contain{
+    height: 100%;
+}
+    .glider{
+        text-align: center;
+    }
+    .slider_title_orange{
+        margin-bottom: 1em;
+        color: var(--bg_orange);
+    }
+    .slider_para{
+        margin-bottom: 2em;
+    }
+        .glider-dot{
+            border-radius: 0;
+            background-color: var(--bg_grey);
+        }
+        .glider-dot:focus{
+            background-color: var(--bg_orange);
+        }
+            .glider-next{
+                right: -1.4em;
+            }
+            .glider-prev{
+                left: -1.4em;
+            }
+            .glider article{
+                text-align: center;
+            }
+            .glider-dot:hover, .glider-dot:focus, .glider-dot.active {
+                background: var(--bg_orange);
+            }
+/* n1 */
+#section_n1 .list_row > li{
+    margin: 0px;
+}
+#section_n1 .container > *{
+    margin: 1.2em 0px;
+}
+#section_n1 .container{
+    text-align: center;
+}
+#section_n1 .container h2{
+    font-size: 2em;
+}
+    .list_items{
+        display: flex;
+        flex-direction: row;
+    }
+        .card_small{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+            .card_small > p{
+                font-size: 0.6em;
+                line-height: 1.8em;
+            }
+            .card_small > h3{
+                font-size: 1.5em;
+            }
+            .card_small > *{
+                margin: 0.2em;
+            }
+            .round_grey{
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5em;
+                background-color: var(--bg_lightgrey);
+            }
+
+/* n2 */
+#section_n2{
+    background-image: url("../assets/bokehback.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+    #section_n2 .container{
+        padding-top: 4em;
+        min-height: 100%;
+        background-color: var(--invisible);
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+        #section_n2 .container h2{
+            color: var(--bg_orange);
+        }
+        #section_n2 .container img{
+            place-self: center;
+            max-width: 100%;
+            transform: translateX(4em);
+        }
+
+/* n3 */
+#section_3{
+
+}
+#section_3 .container{
+    margin-top: 3em;
+}
+    .list_items_cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 2em;
+        column-gap: 1em;
+    }
+        .card_large{
+            padding: 1em;
+            box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.6);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+            .card_large > *{
+                margin: 0.3em;
+            }
+            .card_large > img{
+                max-width: 100%;   
+            }
+
+
+/* n4 */
+#section_4{
+    background-image: url("../assets/lauren-mancke-aOC7TSLb1o8-unsplash.png");
+    background-position: center;
+    background-size: cover;
+}
+#section_4 .container{
+    background-color: rgba(255,255,255,0.8);
+}
+    .list_container_stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+        .container_info_stats{
+            margin: 1em;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+            .container_info_stats > h3{
+                color: var(--bg_orange);
+            }
+/* n5 */
+#section_5{
+    background-image: url("../assets/rect.png");
+}
+    #section_5 .container{
+        background-color: var(--invisible);
+    }
+        .article_amanda{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            column-gap: 4em;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+            .article_amanda > h3{
+                text-align: left;
+                grid-column: 2;
+                grid-row: 1;  
+            }
+            .article_amanda > p{
+                text-align: left;
+                grid-column: 2;
+                grid-row: 2;                
+            }
+            .article_amanda > img{
+                border-radius: 50%;
+                grid-column: 1;
+                grid-row: 1/3;
+            }
+
+/* FOOTER */
+footer{
+    background-color: var(--bg_grey);   
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer li,footer a{
+    color: var(--bg_footer_text);
+}
+    footer > .container{
+        color: white;
+        background-color: var(--invisible);
+    }
+    footer > .container > hr{
+        width: 100%;
+        color: var(--bg_btn_grey);
+    }
+    .orange{
+        color: var(--bg_orange);
+        margin-bottom: 1em;
+    }
+    .container_list_items_footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+        .list_items_footer{
+            display: flex;
+            flex-direction: column;
+        }
+            .list_items_footer ul{
+
+            }
+    .items_style_footer > a,.items_style_footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .items_style_footer{
+        margin: 2em 0.5em;
+    }
+    .items_style_footer img{
+    margin-right: 1em;
+    }
+    .list_btn_footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .list_btn_footer_btn{
+            background-color: var(--bg_btn_grey);
+            color: white;
+            margin: 0.3em;
+            padding: 0.5em;
+        }
+    .split_footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .split_footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .split_footer li{
+        margin: 0.7em;
+    }
