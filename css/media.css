@@ -7,8 +7,15 @@ body{
     .btn_menu_mobile{
         display: none;
     }
-
-
+    .list_row_nav{
+        display: flex !important;
+        flex-direction: row;
+        background-color: var(--invisible);
+        position: relative !important;
+    }
+        .list_row_nav button{
+            color: var(--bg_grey);
+        }
 
     /* SECTION N3 */
     .list_items_cards{
@@ -29,4 +36,8 @@ body{
         .list_items_footer{
             margin: 1em;
         }
+}
+
+@media screen and (min-width:1440px){
+
 }
