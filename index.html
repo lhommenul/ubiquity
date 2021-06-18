@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./js/glider/glider.css" />
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>Ubiquity</title> 
 </head>
 <body> 
@@ -21,7 +22,8 @@
             </hgroup>
         </div>
         <nav>
-            <ul role="list" class="list_row">
+            <button aria-expanded="false" class="btn_menu_mobile" onclick="menu()"><img class="img_menu_nav_change" src="./assets/burger.svg" alt="close menu"></button>
+            <ul role="list" class="list_row_nav list_row">
                 <li><button class="header_btn">HOME</button></li>
                 <li><button class="header_btn">ABOUT</button></li>
                 <li><button class="header_btn">PORTFOLIO</button></li>
@@ -31,7 +33,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="section_n0">
             <div class="container">
                 <div class="glider-contain">
                     <div class="glider">
@@ -283,8 +285,7 @@
         </div>
     </footer>
     <script src="./js/glider/glider.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/scroller.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
         new Glider(document.querySelector('.glider'), {
             slidesToShow: 1,

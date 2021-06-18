@@ -5,11 +5,13 @@ p{ font-size: 1rem; line-height: 1.5em; }
 h1{font-size: 3.125rem; line-height: 3.125rem; }
 h2{font-size: 2.5rem; line-height: 2.5rem; }
 h3{font-size: 2rem; line-height: 2.1rem; }
-body{padding:0px; margin:0px;font-size: 100%;--invisible:rgba(0,0,0,0);}
+body{padding:0px; margin:0px;--invisible:rgba(0,0,0,0);}
 button{border: none;padding: 1em;}
 /* ================================================================= */
 
-
+html{
+    font-size: 100%;
+}
 
 body{
     --bg_orange:#F16822;
@@ -22,6 +24,10 @@ body{
 button{
     cursor: pointer ;
 }
+.img_menu_nav_change{
+    place-self: center;
+    height: 3em;
+}
 /* general */
 .list_row{
     display: flex;
@@ -30,6 +36,16 @@ button{
     .list_row > li{
         margin: 0.5em;
     }
+    .list_row_nav{
+        z-index: 4  ;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--bg_grey);
+    }
+        .list_row_nav button{
+            color: white;
+        }
 .list_col{
     display: flex;
     flex-direction: column;
@@ -41,8 +57,8 @@ button{
 .container{
     min-height: 30em;
     margin: auto;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     justify-content: center;
@@ -112,9 +128,11 @@ section:nth-child(1){
             background-color: var(--bg_orange);
         }
             .glider-next{
-                right: -1.4em;
+                display: none;
+                right: -5em;
             }
             .glider-prev{
+                display: none;
                 left: -1.4em;
             }
             .glider article{
@@ -139,8 +157,11 @@ section:nth-child(1){
     .list_items{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
         .card_small{
+            max-width: 20em;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -188,8 +209,7 @@ section:nth-child(1){
         }
         #section_n2 .container img{
             place-self: center;
-            max-width: 100%;
-            transform: translateX(4em);
+            max-width: 90%;
         }
 
 /* n3 */
@@ -201,7 +221,7 @@ section:nth-child(1){
 }
     .list_items_cards{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns:1fr;
         row-gap: 2em;
         column-gap: 1em;
     }
@@ -230,9 +250,8 @@ section:nth-child(1){
     background-color: rgba(255,255,255,0.8);
 }
     .list_container_stats{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between
+        display: grid;
+        grid-template-columns: auto auto;
     }
         .container_info_stats{
             margin: 1em;
@@ -252,27 +271,28 @@ section:nth-child(1){
     }
         .article_amanda{
             display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
+            grid-template-columns: auto;
             column-gap: 4em;
             justify-content: center;
             align-items: center;
             color: white;
         }
+            #points{
+                margin-bottom: 1em;
+            }
             .article_amanda > h3{
-                text-align: left;
-                grid-column: 2;
-                grid-row: 1;  
+                margin: 0.7em 0px;
+                text-align: center;
             }
             .article_amanda > p{
-                text-align: left;
-                grid-column: 2;
-                grid-row: 2;                
+                margin: 0.7em 0px;
+                text-align: center;           
             }
             .article_amanda > img{
+                margin: 0.7em 0px;
+                margin-top: 2em;
+                place-self: center;
                 border-radius: 50%;
-                grid-column: 1;
-                grid-row: 1/3;
             }
 
 /* FOOTER */
@@ -299,13 +319,21 @@ footer li,footer a{
         margin-bottom: 1em;
     }
     .container_list_items_footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
         .list_items_footer{
             display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em 0px;
             flex-direction: column;
         }
+            .list_btn_footer{
+
+            }
             .list_items_footer ul{
 
             }
@@ -324,6 +352,7 @@ footer li,footer a{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
         .list_btn_footer_btn{
             background-color: var(--bg_btn_grey);
