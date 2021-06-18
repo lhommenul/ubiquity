@@ -39,5 +39,39 @@ body{
 }
 
 @media screen and (min-width:1440px){
-
+    .container{
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+    /* SECTION N1 */
+    .list_items{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .card_small{
+        margin: 1em;
+    }
+    /* SECTION N3 */
+    .list_items_cards{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2em;
+    }
+    .text_align{
+        margin: 1em 0px;
+    }
+        .card_large{
+            
+        }
+    /* SECTION N4 */
+    .list_container_stats{
+        grid-template-columns: repeat(6,1fr);
+    }
+    /* FOOTER */
+    .container_list_items_footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+        .list_items_footer{
+            margin: 1em;
+        }
 }

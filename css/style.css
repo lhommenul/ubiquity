@@ -97,7 +97,9 @@ header{
                 font-size: 0.95em;
             }
     .header_btn{
+        font-family: 'Montserrat', sans-serif;
         background-color: var(--invisible);
+        font-weight: bold;
     }
     .header_btn:focus,.header_btn:hover{
         color: white;
@@ -240,6 +242,10 @@ section:nth-child(1){
         }
             .card_large > *{
                 margin: 0.3em;
+            }
+            .card_large > h4{
+                font-size: 1.5em;
+                color: var(--bg_orange);
             }
             .card_large > img{
                 max-width: 100%;   
