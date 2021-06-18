@@ -78,6 +78,9 @@ header{
     margin: auto;
     max-width: 100em;
 }   
+    .btn_menu_mobile{
+        background-color: var(--invisible);
+    }
     .container_items{
         display: flex;
         flex-direction: row;
@@ -169,7 +172,7 @@ section:nth-child(1){
             text-align: center;
         }
             .card_small > p{
-                font-size: 0.6em;
+                font-size: 0.8em;
                 line-height: 1.8em;
             }
             .card_small > h3{
@@ -219,6 +222,9 @@ section:nth-child(1){
 #section_3 .container{
     margin-top: 3em;
 }
+    .text_align{
+        text-align: center;
+    }
     .list_items_cards{
         display: grid;
         grid-template-columns:1fr;
@@ -366,6 +372,7 @@ footer li,footer a{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        color: var(--bg_footer_text);
     }
     .split_footer ul{
         display: flex;

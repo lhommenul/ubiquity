@@ -3,5 +3,30 @@ body{
     --btn_slid:-2em
 }
 @media screen and (min-width:768px){
+    /* HEADER */
+    .btn_menu_mobile{
+        display: none;
+    }
 
+
+
+    /* SECTION N3 */
+    .list_items_cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .text_align{
+        margin: 1em 0px;
+    }
+    /* SECTION N4 */
+    .list_container_stats{
+        grid-template-columns: repeat(6,1fr);
+    }
+    /* FOOTER */
+    .container_list_items_footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .list_items_footer{
+            margin: 1em;
+        }
 }
