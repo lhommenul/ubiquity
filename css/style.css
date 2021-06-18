@@ -108,7 +108,7 @@ header{
 /* SECTIONS */
 /* n1 */
 section:nth-child(1){
-    background-image: url("../assets/green-chameleon-s9CC2SKySJM-unsplash@2x.png");
+    background-image: url("../assets/green.png");
     background-position: center;
     background-size: cover;
 }
@@ -254,7 +254,7 @@ section:nth-child(1){
 
 /* n4 */
 #section_4{
-    background-image: url("../assets/lauren-mancke-aOC7TSLb1o8-unsplash.png");
+    background-image: url('../assets/lauren.png');
     background-position: center;
     background-size: cover;
 }

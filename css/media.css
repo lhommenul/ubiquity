@@ -74,4 +74,17 @@ body{
         .list_items_footer{
             margin: 1em;
         }
+
+        /* background */
+    #section_5{
+        background-image: url("../assets/rect_2x.png");
+    }
+    section:nth-child(1){
+        background-image: url("../assets/green_2x.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #section_n2{
+        background-image: url("../assets/bokehback_2x.png");
+    }
 }
