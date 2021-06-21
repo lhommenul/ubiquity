@@ -19,3 +19,14 @@ function menu() {
     }
     btn.setAttribute('aria-expanded',!i)
 }
+
+
+// modal
+document.querySelectorAll('.card_large').forEach(e=>{
+    e.addEventListener('click',()=>{
+        const dialog = document.createElement('dialog')
+            dialog.setAttribute('aria-label',"fenetre modale")
+            dialog.open = true;
+        const dialog = document.createElement('div')
+    })
+})

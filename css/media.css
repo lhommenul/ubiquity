@@ -2,6 +2,15 @@
 body{
     --btn_slid:-2em
 }
+@media screen and (min-width:700px){
+    .glider-next{
+        display: block;
+    }
+    .glider-prev{
+        display: block;
+    }
+}
+
 @media screen and (min-width:768px){
     /* HEADER */
     .btn_menu_mobile{
@@ -43,6 +52,12 @@ body{
         padding-left: 15vw;
         padding-right: 15vw;
     }
+        .glider-next{
+            bottom:0;
+        }
+        .glider-prev{
+            bottom:0;
+        }
     /* SECTION N1 */
     .list_items{
         display: grid;
